@@ -4,6 +4,7 @@
     "target": "es2016",
     /* Modules */
     "module": "ESNext",
+    "moduleResolution": "node",
     "rootDir": "./src",
     /* Emit */
     "outDir": "./dist",
