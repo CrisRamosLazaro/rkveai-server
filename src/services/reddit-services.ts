@@ -1,7 +1,7 @@
 import axios from 'axios'
-import { Sorting } from '../types/reddit.types'
+import { Sorting, Post } from '../types/reddit.types'
 
-export const fetchRedditPosts = async (subreddit: string, sorting: Sorting) => {
+export const fetchRedditPosts = async (subreddit: string, sorting: Sorting): Promise<Post[]> => {
 
     try {
         const url = `https://www.reddit.com/r/${subreddit}/${sorting}.json?limit=10`
